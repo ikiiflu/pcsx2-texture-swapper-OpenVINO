@@ -84,8 +84,9 @@ pip install torch transformers diffusers openvino[onnx] openvino-nightly optimum
 ### Passo a Passo
 
 1. **No PCSX2**: Configure a pasta do jogo e rode o jogo por alguns minutos para descarregar (dump) as texturas
-   - Arquivo → Plugins... → Verifique que o plugin gráfico está habilitado
-   - Opções avançadas: marque "Dump textures to file"
+   - Configurações → Gráficos... → Verifique que o renderizador gráfico está habilitado
+   - Substituições de texturas: marque "Extrair texturas"
+   - Jogue o jogo para extrair as texturas.
 
 2. **Execute o script**:
    ```bash
@@ -101,12 +102,6 @@ pip install torch transformers diffusers openvino[onnx] openvino-nightly optimum
      - **Strength**: 0.5-0.9 (intensidade de transformação)
      - **Guidance**: 5-15 (como seguir o prompt)
    - ▶️ **Clique em INICIAR**
-
-4. **No PCSX2**: 
-   - Vá para Config → Graphics → Texture Replacement
-   - Marque **Enable Texture Replacement**
-   - Aponte para a pasta do jogo
-   - Reinicie o jogo
 
 ### Estrutura de Pastas Esperada
 
@@ -300,8 +295,6 @@ with ThreadPoolExecutor(max_workers=4) as executor:
 
 1. **`texture-swapper-gpu`**: Versão NVIDIA CUDA com Stable Diffusion 3
 2. **`texture-swapper-amd`**: Versão AMD ROCm
-3. **`texture-swapper-mps`**: Versão Apple Silicon (Metal)
-4. **`texture-swapper-web`**: Interface web com FastAPI + React
 
 ---
 
@@ -404,6 +397,6 @@ Este projeto é **experimental**. Não há garantias de qualidade ou funcionalid
 
 ---
 
-**Desenvolvido com ❤️ para emulação de PS2 e experimentação com IA**
+**❤️ PS2**
 
-*Última atualização: 2025*
+*Última atualização: abril de 2026*
