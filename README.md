@@ -412,6 +412,6 @@ Este projeto é **experimental**. Não há garantias de qualidade ou funcionalid
 
 ---
 
-**Desenvolvido com ❤️ para a comunidade PS2 e apaixonados por emulação**
+**❤️ PS2**
 
 *Última atualização: abril de 2026*
