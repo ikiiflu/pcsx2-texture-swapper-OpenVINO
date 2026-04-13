@@ -418,4 +418,3 @@ Este projeto é **experimental**. Não há garantias de qualidade ou funcionalid
 **❤️ PS2**
 
 *Última atualização: abril de 2026*
-```
