@@ -13,7 +13,7 @@ Um **texture swapper experimental** que usa inteligência artificial (modelos ot
   - **Sem contexto (txt2img)**: Gera texturas completamente novas a partir de palavras-chave aleatórias
 
 - **Interface gráfica intuitiva** (tkinter) com:
-  - Seleção de pasta do jogo
+  - Seleção da pasta de texturas do jogo (ex: `textures/SLUS-20001`)
   - Controle de parâmetros em tempo real
   - Log detalhado de atividades
   - Temas/presets de prompts customizáveis
@@ -38,7 +38,7 @@ Um **texture swapper experimental** que usa inteligência artificial (modelos ot
 
 - **Python 3.8+**
 - **PCSX2** (versão recente) com suporte a texture replacement
-- **Texturas dumped** do jogo (PCSX2 salva automaticamente em `dumps/`)
+- **Texturas dumped** do jogo (PCSX2 salva automaticamente na subpasta `dumps/` do seu jogo)
 - Espaço em disco: ~8GB para modelos + espaço para texturas geradas
 
 ### Dependências Python
@@ -57,7 +57,7 @@ pip install torch transformers diffusers openvino[onnx] openvino-nightly optimum
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/ikiiflu/pcsx2-texture-swapper-OpenVINO.git
+   git clone [https://github.com/ikiiflu/pcsx2-texture-swapper-OpenVINO.git](https://github.com/ikiiflu/pcsx2-texture-swapper-OpenVINO.git)
    cd pcsx2-texture-swapper-OpenVino
    ```
 
@@ -88,13 +88,13 @@ pip install torch transformers diffusers openvino[onnx] openvino-nightly optimum
 
 ### Passo a Passo
 
-1. **No PCSX2**: Configure a pasta do jogo e rode o jogo por alguns minutos para extrair as texturas
+1. **No PCSX2**: Configure a extração de texturas
    - Abra: **Configurações → Gráficos**
    - Verifique se o **renderizador gráfico está habilitado**
-   - Abra: **Configurações → Substituições de Texturas**
+   - Vá na aba **Substituições de Texturas** (Texture Replacement)
    - Marque: ✓ **Ativar substituição de texturas**
    - Marque: ✓ **Extrair texturas para arquivo**
-   - Jogue o jogo por 2-3 minutos (as texturas serão extraídas para `dumps/` automaticamente)
+   - Jogue o jogo por 2-3 minutos. O PCSX2 vai criar automaticamente uma pasta baseada no código do jogo (ex: `SLUS-20001`) dentro da pasta `textures`, contendo as imagens na subpasta `dumps/`.
 
 2. **Execute o script**:
    ```bash
@@ -102,7 +102,7 @@ pip install torch transformers diffusers openvino[onnx] openvino-nightly optimum
    ```
 
 3. **Na interface**:
-   - 📁 **Selecione a pasta do jogo** (aquela que contém `dumps/`)
+   - 📁 **Selecione a pasta do jogo**: Navegue até o diretório do PCSX2 e selecione a pasta com o código do jogo (Ex: `textures/SLUS-20001`). *Não selecione a pasta `dumps` diretamente, selecione a pasta pai do código.*
    - 🎯 **Escolha o modo**: Com contexto ou Sem contexto
    - 📝 **Defina um prompt/tema** (se modo com contexto)
    - ⚙️ **Ajuste os parâmetros**:
@@ -113,17 +113,21 @@ pip install torch transformers diffusers openvino[onnx] openvino-nightly optimum
 
 ### Estrutura de Pastas Esperada
 
+Para que a integração funcione perfeitamente com o PCSX2, a estrutura que o programa usa é esta:
+
+```text
+textures/
+└── SLUS-20001/          ← 📁 ESTA é a pasta que você deve selecionar na interface!
+    ├── dumps/           ← Texturas originais (dumped pelo PCSX2)
+    │   ├── texture_001.png
+    │   ├── texture_002.png
+    │   └── ...
+    └── replacements/    ← Texturas geradas (salvas automaticamente pelo script)
+        ├── texture_001.png
+        ├── texture_002.png
+        └── ...
 ```
-SUA_TEXTURES_DO_JOGO/
-├── dumps/           ← Texturas originais (dumped pelo PCSX2)
-│   ├── texture_001.png
-│   ├── texture_002.png
-│   └── ...
-└── replacements/    ← Texturas geradas (criadas pelo script)
-    ├── texture_001.png
-    ├── texture_002.png
-    └── ...
-```
+*(Nota: `SLUS-20001` é apenas um exemplo. O código da pasta será diferente dependendo da região e do jogo).*
 
 ---
 
@@ -331,10 +335,9 @@ pip install --upgrade optimum[intel] openvino openvino-nightly
 ### PCSX2 não reconhece as texturas
 
 Verifique:
-- Pasta `replacements/` contém `.png` files
-- Config → Graphics → Texture Replacement está ativado
-- Caminho aponta para a pasta **do jogo**, não para `replacements/` diretamente
-- Nomes de arquivo batem entre `dumps/` e `replacements/`
+- A pasta `replacements/` contida no diretório do seu jogo (ex: `textures/SLUS-20001/replacements/`) possui os arquivos `.png`.
+- Config → Graphics → Texture Replacement está ativado.
+- O caminho no emulador aponta para a pasta global de texturas, e a nomenclatura dos arquivos bate perfeitamente com os que estavam em `dumps/`.
 
 ### Texturas ficam muito estranhas
 
@@ -415,3 +418,4 @@ Este projeto é **experimental**. Não há garantias de qualidade ou funcionalid
 **❤️ PS2**
 
 *Última atualização: abril de 2026*
+```
