@@ -1,0 +1,183 @@
+[
+  {
+    "name": "Pixel Art 16-bit",
+    "prompt": "pixel art, 16-bit retro game texture, dithering, vibrant colors",
+    "negative": "3d, realistic, photographic, blurry, watermark"
+  },
+  {
+    "name": "Horror / Survival",
+    "prompt": "horror style, dark, grim, cracked, decayed, blood stains, survival game",
+    "negative": "bright, colorful, cartoon, anime, text, watermark, 3d scene"
+  },
+  {
+    "name": "Fantasy Épico",
+    "prompt": "epic fantasy texture, glowing runes, magical, ancient stone, mystical energy",
+    "negative": "modern, sci-fi, text, watermark, characters, 3d scene"
+  },
+  {
+    "name": "Cyberpunk Neon",
+    "prompt": "cyberpunk neon surface, synthwave, glowing edges, dark metal, neon lights",
+    "negative": "natural, organic, dirt, wood, daylight, characters, text"
+  },
+  {
+    "name": "Anime / Cel-Shaded",
+    "prompt": "anime style, cel shaded, vibrant flat colors, Japanese animation, clean outlines",
+    "negative": "realistic, photographic, 3d, shadows, depth, watermark, text"
+  },
+  {
+    "name": "Medieval Pedra",
+    "prompt": "medieval stone texture, mossy, weathered, castle wall, high detail",
+    "negative": "modern, plastic, metal, sci-fi, characters, UI, text"
+  },
+  {
+    "name": "Madeira Envelhecida",
+    "prompt": "weathered wood texture, old planks, scratched, splinters, medieval",
+    "negative": "metal, stone, plastic, modern, characters, 3d scene, text"
+  },
+  {
+    "name": "Metálico Sujo",
+    "prompt": "dirty metal texture, rust, scratches, industrial, worn, metallic surface",
+    "negative": "wood, stone, organic, clean, anime, cartoon, text"
+  },
+  {
+    "name": "Aquarela",
+    "prompt": "watercolor painting, soft washes, delicate brushstrokes, pastel, artistic",
+    "negative": "sharp, detailed, photorealistic, 3d, dark, characters, text"
+  },
+  {
+    "name": "Dark Fantasy",
+    "prompt": "dark fantasy, gothic, grim, desaturated, blood, bone, cursed stone",
+    "negative": "bright, colorful, anime, modern, clean, characters, UI, text"
+  },
+  {
+    "name": "Tropical / Natureza",
+    "prompt": "tropical leaf texture, lush green, jungle, natural, vibrant foliage",
+    "negative": "stone, metal, dark, urban, characters, text, watermark"
+  },
+  {
+    "name": "Gelo / Criogênico",
+    "prompt": "ice texture, frozen, crystalline, cold blue, cracked frost, glacier",
+    "negative": "warm, fire, brown, organic, characters, text, watermark"
+  },
+  {
+    "name": "Lava / Vulcânico",
+    "prompt": "lava texture, volcanic rock, molten, glowing orange cracks, igneous",
+    "negative": "cold, ice, water, green, characters, text, watermark"
+  },
+  {
+    "name": "HD Realista 4K",
+    "prompt": "photorealistic surface texture, 4K quality, high detail, PBR material, game ready",
+    "negative": "cartoon, anime, pixel art, painting, characters, UI, text"
+  },
+  {
+    "name": "Claymation",
+    "prompt": "claymation style, 3D clay texture, stop-motion aesthetic, playful, soft",
+    "negative": "realistic, dark, sharp, characters, text, watermark"
+  },
+  {
+    "name": "Óleo / Pintura",
+    "prompt": "oil painting texture, impasto, thick brushstrokes, classical art, rich colors",
+    "negative": "digital, flat, cartoon, photo, text, watermark"
+  },
+  {
+    "name": "Espacial / Sci-Fi",
+    "prompt": "sci-fi surface, futuristic hull, metal panels, space station texture, glowing circuits",
+    "negative": "organic, wood, stone, medieval, natural, text, watermark"
+  },
+  {
+    "name": "Areia / Deserto",
+    "prompt": "desert sand texture, warm, dry, cracked earth, dunes, arid",
+    "negative": "water, ice, dark, stone, characters, text, watermark"
+  },
+  {
+    "name": "Steampunk",
+    "prompt": "steampunk texture, brass, gears, pipes, victorian industrial, mechanical details",
+    "negative": "modern, plastic, futuristic, clean, anime, text, watermark"
+  },
+  {
+    "name": "Cristal Mágico",
+    "prompt": "crystal texture, glowing facets, magical energy, translucent, fantasy mineral",
+    "negative": "metal, wood, dirt, dull, characters, text, watermark"
+  },
+  {
+    "name": "Pântano / Swamp",
+    "prompt": "swamp texture, wet mud, moss, murky water, decayed organic matter",
+    "negative": "clean, dry, bright, modern, characters, text, watermark"
+  },
+  {
+    "name": "Alien / Orgânico",
+    "prompt": "alien organic texture, biomechanical, strange flesh, veins, surreal surface",
+    "negative": "natural earth, wood, clean, human, text, watermark"
+  },
+  {
+    "name": "Cartoon",
+    "prompt": "cartoon texture, stylized, bold colors, simple shapes, playful",
+    "negative": "realistic, dark, gritty, 3d, text, watermark"
+  },
+  {
+    "name": "Neve Fofa",
+    "prompt": "soft snow texture, fluffy, powder snow, bright white, winter",
+    "negative": "dark, dirty, lava, dry, characters, text, watermark"
+  },
+  {
+    "name": "Ferrugem Pesada",
+    "prompt": "heavy rust texture, corroded metal, flakes, oxidation, decay",
+    "negative": "clean, polished, wood, organic, text, watermark"
+  },
+  {
+    "name": "Energia / Elétrico",
+    "prompt": "electric energy texture, lightning patterns, glowing blue, high voltage",
+    "negative": "organic, wood, stone, calm, text, watermark"
+  },
+  {
+    "name": "Vidro Quebrado",
+    "prompt": "broken glass texture, shattered shards, reflective, sharp edges",
+    "negative": "soft, organic, wood, matte, text, watermark"
+  },
+  {
+    "name": "Tecido Luxuoso",
+    "prompt": "luxury fabric texture, silk, satin, smooth, elegant folds",
+    "negative": "rough, dirty, stone, metal, text, watermark"
+  },
+  {
+    "name": "Infernal / Demoníaco",
+    "prompt": "hellish texture, demonic, dark red, fire cracks, cursed surface",
+    "negative": "bright, clean, natural, cartoon, text, watermark"
+  },
+  {
+    "name": "Cidade Urbana",
+    "prompt": "urban concrete texture, graffiti, asphalt, street wear, city environment",
+    "negative": "nature, clean, fantasy, characters, text, watermark"
+  },
+  {
+    "name": "Tecnologia Limpa",
+    "prompt": "clean futuristic tech texture, white panels, minimal, sci-fi lab",
+    "negative": "dirty, rust, organic, medieval, text, watermark"
+  },
+  {
+    "name": "Holográfico",
+    "prompt": "holographic texture, iridescent colors, shifting light, futuristic surface",
+    "negative": "matte, dull, natural, wood, text, watermark"
+  },
+  {
+    "name": "Runas Antigas",
+    "prompt": "ancient runic carvings, glowing symbols, stone etched, mystical",
+    "negative": "modern, sci-fi, clean, text overlay, watermark"
+  },
+  {
+    "name": "Subaquático",
+    "prompt": "underwater texture, wet surface, algae, bubbles, ocean floor",
+    "negative": "dry, desert, fire, clean, text, watermark"
+  },
+  {
+    "name": "Glitch Digital",
+    "prompt": "glitch texture, digital distortion, pixel errors, corrupted data",
+    "negative": "natural, organic, smooth, clean, text, watermark"
+  },
+  {
+    "name": "Madeira Pintada",
+    "prompt": "painted wood texture, peeling paint, rustic, layered colors",
+    "negative": "metal, clean, modern, plastic, text, watermark"
+  }
+]
+
