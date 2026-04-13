@@ -1,0 +1,7 @@
+torch
+transformers
+diffusers
+openvino[onnx]
+openvino-nightly
+optimum[intel]
+pillow
