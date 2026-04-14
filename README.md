@@ -2,7 +2,7 @@
 
 Um **texture swapper experimental** que usa inteligência artificial (modelos otimizados para CPU via OpenVINO) para substituir e regenerar texturas de jogos PlayStation 2 emulados no PCSX2. 
 
-> ⚠️ **Aviso**: Este projeto usa modelos otimizados para execução em **CPU apenas**. A qualidade das texturas geradas é limitada. **Você pode (e deve) adaptar o código para usar modelos mais avançados** em GPUs (NVIDIA/AMD) ou versões mais poderosas de modelos. Veja a seção [Customização](#customizacao-e-melhorias) para detalhes.
+> ⚠️ **Aviso**: Este projeto usa modelos otimizados para execução em **CPU apenas**. A qualidade das texturas geradas é limitada. **Você pode (e deve) adaptar o código para usar modelos mais avançados** em GPUs (NVIDIA/AMD) ou versões mais poderosas de modelos. Veja a seção [Customização](#-customização-e-melhorias) para detalhes.
 
 ---
 
